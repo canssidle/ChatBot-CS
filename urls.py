@@ -1,7 +1,6 @@
-from django.urls import path, include
-from . import views
+from django.urls import path
+from . import controller
 
 urlpatterns = [
-    path('', views.index),
-    path('api', include("Tensorflow_Chatbot.Api.urls")),
+    path('', controller.index),
 ]
